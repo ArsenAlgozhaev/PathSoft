@@ -1,0 +1,212 @@
+.footer {
+    background-color: #303036;
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.footer-social-networks {
+    display: flex;
+}
+
+.footer-pathsoft {
+    color: #cacaca;
+    width: 265px;
+    padding: 0 20px;
+}
+
+.footer-pathsoft a {
+    color: #cacaca;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo-img {
+    margin-right: 15px;
+}
+
+.footer-logo a {
+    color: #fff;
+}
+
+.footer-heading {
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-paragraphs p {
+    line-height: 25px;
+    font-size: 16px;
+    word-spacing: 4px;
+    font-family: 'Istok Web', sans-serif ;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.footer-social-networks a {
+    width: 23px;
+    height: 23px;
+    border: 1px solid #cacaca;
+    border-radius: 7px;
+    color: #cacaca;
+    padding: 6px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    transition: .4s;
+}
+
+.footer-social-networks i {
+    font-size: 17px;
+}
+
+.footer-social-networks a:hover {
+    background-color: #fff;
+    color: #303036;
+}
+
+.footer-content {
+    display: flex;
+    position: relative;
+    padding-bottom: 80px;
+}
+
+.link a {
+    color: #cacaca;
+    line-height: 40px;
+    font-size: 16px;
+    word-spacing: 4px;
+    font-family: 'Istok Web', sans-serif ;
+}
+
+.link {
+    margin-top: 20px;
+}
+
+.footer-menu {
+    padding: 0 20px;
+    width: 85px;
+}
+
+.footer-offer {
+    padding: 0 20px;
+    width: 150px;
+}
+
+.addres p {
+    color: #cacaca;
+    line-height: 40px;
+    font-size: 16px;
+    word-spacing: 1px;
+    font-family: 'Istok Web', sans-serif ;
+}
+
+.phone-number span {
+    color: #cacaca;
+}
+
+.mail {
+    color: #cacaca;
+}
+
+.footer-contact i {
+    margin-right: 10px;
+}
+
+.phone-number i {
+    margin-left: 3px;
+}
+
+.phone-number a {
+    transition: .4s;
+}
+
+.phone-number a:hover {
+    text-decoration: underline;
+}
+
+.mail a  {
+    transition: .4s;
+}
+
+.mail a:hover {
+    text-decoration: underline;
+}
+
+.btn-footer {
+    width: 120px;
+    margin: 0;
+}
+
+.block-subscribe {
+    display: flex;
+    margin-top: 25px;
+}
+
+.block-subscribe input {
+    color: #e0e0e0;
+    border: 1px solid #cacaca;
+    border-radius: 7px;
+    padding: 15px;
+    padding-right: 100px;
+    font-family: 'Istok Web', sans-serif ;
+    font-size: 15px;
+    margin-right: 15px;
+    background-color: transparent;
+}
+
+.subscription {
+    margin-top: 30px;
+}
+
+.footer-content::after {
+    content: "";
+    bottom: 0;
+    left: -11%;
+    right: -11%;
+    width: 111%;
+    height: 1px;
+    background-color: #cacaca;
+    position: absolute;
+}
+
+.footer-end {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.footer-end-links {
+    display: flex;
+}
+
+.footer-end-links a {
+    color: #cacaca;
+    line-height: 40px;
+    font-size: 16px;
+    word-spacing: 1px;
+    font-family: 'Istok Web', sans-serif ;
+    margin-right: 15px;
+    text-decoration: underline;
+    text-decoration-style:dashed;
+    text-underline-position: under;
+    transition: .4s;
+}
+
+.footer-end-links a:hover {
+    text-decoration-style: solid;
+}
+
+.copyright {
+    color: #cacaca;
+    font-family: 'Istok Web', sans-serif ;
+}

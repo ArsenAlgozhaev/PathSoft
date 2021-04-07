@@ -1,0 +1,133 @@
+/* * {
+    padding: 0;
+    margin: 0;
+}
+
+#bg-img1 {
+    background-image: url(../../images/backgrounds/main-banner-img3.jpg);
+}
+
+.slide-container {
+    width: 100%;
+    height: 100vh;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-out {
+    width: 100%;
+    height: 100%;
+}
+.slide-image {
+    width: 100%;
+    height: 100vh;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 45%;
+
+    padding: 15px;
+    font-size: 24px;
+
+    background-color: rgba(0, 0, 0, .3);
+    border: none;
+
+    color: #fff;
+
+    transition: .5s;
+
+    cursor: pointer;
+}
+
+.next {
+    right: 0;
+    border-radius: 10px 0 0 10px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 0 10px 10px 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+
+.slide-inner {
+    position: absolute;
+    transition: .5s;
+    z-index: 4;
+}
+
+.dots {
+    position: absolute;
+    bottom: 15%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+/* }
+
+.dot {
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .5);
+    margin: 5px;
+
+    cursor: pointer;
+    transition: .5s;
+    right: 0;
+
+}
+
+.dot:hover {
+    transform: scale(1.3);
+    background-color: #000;
+}
+
+.dot.active {
+    transform: scale(1.3);
+    background-color: #000;
+}
+
+.slide-image.active {
+    width: 100%;
+} */ 
+
+@keyframes fadeBG {
+    25% {
+      background-image: url("../../images/backgrounds/intro-img1.jpg");
+      width: 100%;
+      height: 100%;
+    }
+    50% {
+      background-image: url("../../images/backgrounds/intro-img2.jpg");
+      width: 100%;
+      height: 100%;
+    }
+}
+
+.jumbotron {
+    background-image: url('../../images/backgrounds/main-banner-img3.jpg');
+    background-position: center;
+    background-size: cover;
+    animation: fadeBG 21s cubic-bezier(0, 0, 0.15, 3) infinite;
+    box-shadow: 0 -100vh rgba(0, 0, 0, 0) inset;
+    color: white;
+    width: 100%;
+    height: 5000px;
+}
+
+.solution {
+    padding: 220px 0;
+}

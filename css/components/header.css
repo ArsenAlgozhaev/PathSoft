@@ -1,0 +1,934 @@
+.header {
+    position: relative;
+    right: 0;
+    left: 0;
+   
+    background-color: #313131;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: #d6d1d1;
+
+    font-family: 'Istok Web', sans-serif;
+}
+
+.header-main-adaptive {
+    display: none;
+}
+
+.header-top,
+.header-main,
+.feedback {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bold {
+    font-weight: bold;
+    color: #d6d1d1;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.call {
+    width: 100px;
+    height: 25px;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-underline-position: under;
+    margin-left: 20px;
+}
+
+.bold:hover {
+    color: #ffffff;
+}
+
+.call img {
+    padding-right: 8px;
+}
+
+.img-email {
+    background: url(../../images/wigets/email.png) 0%  no-repeat;
+    padding-left: 30px;
+
+}
+
+.header a {
+    color: #858383;
+    transition: .5s;
+
+}
+
+.logo img {
+    padding-right: 8px;
+}
+
+.feedback a {
+    margin-left: 12px;
+    color: #c9c7c7;
+}
+
+.header-top a:hover {
+    color: white;
+}
+
+.info a {
+    margin-right: 12px;
+}
+
+.header-main {
+    background-color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    margin-top: 12px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 6;
+}
+
+.header-main a {
+    color: rgb(27, 27, 27);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 200px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.dropdown i {
+    color: #2b7ef3;
+    padding-left: 5px;
+    font-size: 11px;
+}
+
+.dropdown-content a {
+    padding-right: 25px;
+    padding-bottom: 15px;
+    padding-top: 5px;
+    padding-left: 25px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-family: 'Istok Web', sans-serif;
+}
+
+.dropdown:hover .dropdown-content{
+    display: flex;
+}
+
+#menu-margin {
+    margin-right: 45px;
+    margin-left: 15px;
+    
+    font-family: 'Istok Web', sans-serif;
+}
+
+#search {
+    margin-left: 30px;
+}
+
+.logo {
+    margin-right: 2px;
+    font-size: large;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.solution {
+    /* background-image: url; */
+    /* position: relative; */
+    font-family: 'Montserrat', sans-serif;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrap {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.btn {
+    width: 150px;
+    height: 40px;
+    background-color: #4a72f7;
+    color: #fff;
+    /* font-weight: 600; */
+    font-size: 14px;
+    font-family: 'Istok Web', sans-serif ;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+.btn-row {
+    width: 32%;
+}
+
+.solution h2 {
+    width: 35%;
+}
+
+.person img{
+    width: auto;
+}
+
+.solution p {
+    width: 42%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    line-height: 25px;
+    font-size: 15px;
+    color: rgb(37, 37, 37);
+}
+
+.shift {
+    margin-left: 100px;
+}
+
+.bordered {
+    background-color: transparent;
+    border-color: #000;
+    color: rgb(37, 37, 37);
+    transition: .2s;
+    overflow: hidden;
+    position: relative;
+}
+
+.btn-row {
+    position: relative;
+    overflow: hidden;
+}
+
+.bordered::after {
+    content: "";
+    background-color:  #414141;
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    transform: translateX(-130%) skew(-15deg);
+    transition: .2s;
+    z-index: 0;
+}
+
+.z-index {
+    z-index: 5;
+}
+
+.header-main.active {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin-top: 0;
+}
+
+.bordered:hover .z-index {
+    color: #fff;
+}
+
+.bordered:hover::after{
+    transform: translateX(0) skew(-15deg);
+}
+
+.solution i {
+    padding-left: 7px;
+}
+
+.gradient {
+    background: rgb(0,142,255);
+    background: linear-gradient(90deg, rgba(0,142,255,1) 0%, rgba(72,165,255,1) 94%, rgba(72,165,255,1) 100%);
+}
+
+.gradient:hover {
+    background: rgb(72,165,255);
+    background: linear-gradient(90deg, rgba(72,165,255,1) 0%, rgba(72,165,255,1) 4%, rgba(0,142,255,1) 100%);
+}
+
+.service {
+    display: flex;
+    justify-content: center;
+    font-family: 'Istok Web', sans-serif ;
+}
+
+.service h2 {
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+.service h3 {
+    color: rgb(30, 121, 224);
+}
+
+
+.block {
+    width: calc(100% / 3 - 2%);
+    text-align: center;
+    margin-top: 30px;
+    /* margin-bottom: 60px; */
+    /* border-radius: 5px; */
+    background-color:rgb(255, 255, 255);
+    border-radius: 10px;
+    line-height: 1.5;
+    border: rgb(187, 182, 182) solid 1px;
+
+    padding-top: 70px;
+    padding-bottom: 30px;
+
+    position: relative;
+    font-family: 'Istok Web', sans-serif ;
+}
+
+.corporate,
+.call-center,
+.cloud {
+    transition: .3s;
+    position: relative;
+}
+
+.bc-corporate,
+.bc-call-center,
+.bc-cloud {
+    position: absolute;
+    color: #fff;
+    opacity: .2;
+    display: none;
+
+    top: 30%;
+    left: 20%;
+    font-size: 350px;
+    overflow: hidden;
+}
+
+.corporate:hover .bc-corporate,
+.call-center:hover .bc-call-center,
+.cloud:hover .bc-cloud {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.corporate:hover,
+.call-center:hover,
+.cloud:hover {
+    background-color:  #1e79e0;
+    overflow: hidden;
+}
+
+.corporate:hover h3,
+.corporate:hover p,
+.call-center:hover h3,
+.call-center:hover p,
+.cloud:hover h3,
+.cloud:hover p {
+    color: #fff;
+    overflow: hidden;
+}
+
+.corporate:hover .feature-icon,
+.call-center:hover .feature-icon,
+.cloud:hover .feature-icon {
+    color: #1e79e0;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.feature-icon {
+    background-color: #1e79e0;
+    color: #fff;
+
+    position: absolute;
+
+    top: 25px;
+
+    width: 100px;
+    height: 100px;
+
+    right: 0;
+    left: 0;
+
+    margin: auto;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.block p {
+    width: 90%; 
+    margin: auto;
+    color: rgb(65, 65, 65);
+}
+
+.feature-icon {
+    font-size: 42px;
+}
+
+.btn-margin {
+    margin-top: 65px;
+}
+
+.btn-service {
+    width: 250px;
+    height: 45px;
+    background: rgb(0,142,255);
+    background: linear-gradient(90deg, rgba(0,142,255,1) 0%, rgba(72,165,255,1) 94%, rgba(72,165,255,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 5px;
+    border: 1px solid transparent;
+    font-family: 'Istok Web', sans-serif ;
+    margin: auto;
+    margin-top: 50px;
+
+    color: #fff;
+}
+
+.btn-service i {
+    margin-left: 5px;
+}
+
+.btn-service p {
+    color: #fff;
+}
+
+#color-btn {
+    color: #fff;
+}
+
+.btn-service:hover {
+    background: rgb(72,165,255);
+    background: linear-gradient(90deg, rgba(72,165,255,1) 0%, rgba(72,165,255,1) 4%, rgba(0,142,255,1) 100%);
+}
+
+.choose {
+    background-color: rgb(245, 245, 245);
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.block-choose {
+    width: calc(100% / 3 - 2%);
+    text-align: center;
+    margin-top: 30px;
+
+    line-height: 1.5;
+
+    /* padding-top: 70px; */
+    padding-bottom: 30px;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.number-block-choose {
+    color: rgb(30, 121, 224);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    padding-top: 3px;
+}
+
+.text-block-choose h2 {
+    color: rgb(37, 37, 37);
+    font-size: 23px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 12px;
+    width: 75%;
+    text-align: left;
+    padding-left: 65px;
+}
+
+.text-block-choose p {
+    color:  rgb(87, 86, 86);
+    font-family: 'Istok Web', sans-serif;
+    width: 78%;
+    text-align: left;
+    padding-left: 65px;
+}
+
+.number-block-choose::after {
+    content: "";
+    width: 55px;
+    height: 1px;
+    background-color:  rgb(87, 86, 86);
+    position: absolute;
+    left: 25px;
+    top: 14px;
+}
+
+.text-counter-round {
+    height: 315px;
+    width: 315px;
+    background-color: #fff;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 15px 15px 20px rgb(190, 188, 188);
+}
+
+.counter-item-text {
+    margin-left: 100px;
+}
+
+.round-counter {
+    padding-right: 50px;
+    margin-left: 210px;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.counter-item-text h3 {
+    color: #327ce2;
+    font-size: 46px;
+    font-weight: bold;
+}
+
+#item-text-margin {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.counter-item-text p,
+.text-counter-round p {
+    margin-top: 15px;
+    font-size: 23px;
+    font-weight: bold;
+    color: #1f1f1f
+}
+
+.wrap-counter {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-items: center;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.round-counter-with-text {
+}
+
+.text-counter-round h3, p {
+    padding-top: 35%;
+}
+
+.text-counter-round h3, p {
+    padding-top: 15%;
+}
+
+.text-counter-round  p {
+    margin-top: 1px;
+    line-height: 30px;
+}
+
+.text-counter-round  h3 {
+    color:#2b7ef3;
+    font-weight: bold;
+    font-size: 150px;
+}
+
+.bg-round {
+    background-color: #327ce2;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -3;
+    top: 30px;
+    left: 180px;
+    overflow: hidden;
+}
+
+.bg-round::before {
+    content: "";
+    background-color: #418af0;
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    z-index: -2;
+    top: 150px;
+    left: -40px;
+}
+
+.bg-round::after {
+    content: "";
+    background-color: #5a97ee;
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    z-index: -2;
+    top: 120px;
+    left: 30px;
+}
+
+.round-counter::after {
+    content: "";
+    background-color: #2b7ef3;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    top: 0;
+    left: 590px;
+}
+
+.round-counter::before {
+    content: "";
+    background-color: #2b7ef3;
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    top: 90px;
+    left: 605px;
+}
+
+.latest-projects {
+    background-color: rgb(245, 245, 245);
+}
+
+.latest-projects-block {
+    margin-top: 30px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.latest-projects-block-back {
+    border-radius: 10px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #2b7ef3;
+
+    transition: .8s;
+    opacity: 0;
+}
+
+.latest-projects-block:hover .latest-projects-block-back {
+    opacity: 1;
+    transform: rotateY(180deg)
+}
+
+.latest-projects-block:hover {
+    transform: rotateY(180deg)
+}
+
+.latest-projects-block:hover .latest-projects-block-front {
+    opacity: 0;
+    transform: rotateY(180deg)
+}
+
+.latest-projects-block-back {
+    padding: 40px;
+}
+
+.latest-projects-block-back h3 {
+    font-family: 'Istok Web', sans-serif ;
+    color: #fff;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.latest-projects-block-back p {
+    color: #fff;
+    font-family: 'Istok Web', sans-serif ;
+    font-size: 15px;
+    word-spacing: 2px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.latest-projects-block-back i {
+    color: #2b7ef3;
+    background-color: #fff;
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.latest-projects-block-border {
+    border-radius: 10px;
+}
+
+.project-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.project-menu a {
+    color: #1f1f1f;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: 'Istok Web', sans-serif ;
+    transition: .4s;
+}
+
+.project-menu a:hover {
+    color: #2b7ef3;
+}
+
+.person {
+    position: relative;
+    margin-top: 15px;
+    border: 1px solid #bdbaba;
+    border-radius: 12px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.person-contact a {
+    width: 100%;
+    color: #fff;
+    padding: 5px;
+    background-color: #2b7ef3;
+    border: 1px solid  #2b7ef3;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+
+.person-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 70.5%;
+    right: 25%;
+    overflow: hidden;
+    transition: .2s;
+}
+
+.person-contact a{
+    transform: translateY(-50px);
+    transition: transform .4s linear;
+}
+  
+.person:hover .person-contact a {
+    transform: translateY(0);
+    top: 70.5%;
+    right: 25%;
+}
+
+.person:hover {
+    box-shadow: 0 0 10px rgb(187, 182, 182);
+}
+
+.person-info h3,
+.person-info p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.person-info h3 {
+    font-weight: bold;
+    font-size: 17px;
+    color: rgb(37, 37, 37);
+    margin-top: 25px;
+}
+
+.person-info p {
+    color: #575757;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: 'Istok Web', sans-serif ;
+}
+
+.reviews {
+    width: calc(90% / 3 - 2%);
+    padding: 30px 20px;
+    border: 1px solid #bdbaba;
+    border-radius: 12px;
+    margin-top: 15px;
+    transition: 0.4s;
+}
+
+.reviews:hover {
+    box-shadow: 0 0 10px rgb(187, 182, 182);
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.name-user h3 {
+    font-weight: bold;
+    font-size: 17px;
+    color: rgb(37, 37, 37);
+    margin-top: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.name-user p {
+    color: #575757;
+    font-size: 16px;
+    margin-top: 10px;
+    font-family: 'Istok Web', sans-serif ;
+}
+
+.name-user {
+    margin-left: 25px;
+    padding-bottom: 35px;
+}
+
+
+.review p {
+    color: #575757;
+    font-size: 16px;
+    margin-top: 10px;
+    font-family: 'Istok Web', sans-serif ;
+    line-height: 25px;
+}
+
+#review-padding1 {
+    margin-bottom: 25px;
+}
+
+.news {
+    background-color: rgb(245, 245, 245);
+}
+
+.latest-news {
+    width: calc(100% / 3 - 2%);
+    border: 1px solid #bdbaba;
+    border-radius: 12px;
+    background-color: #fff;
+}
+
+.img-news img {
+    width: 100%;
+    height: 290px;
+}
+
+.latest-news {
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.text-news {
+    padding: 20px;
+}
+
+.text-news h3 {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 17px;
+    color: rgb(37, 37, 37);
+    font-family: 'Montserrat', sans-serif;
+    transition: .4s;
+}
+
+.text-news h3:hover {
+    color: #2c7ae7;
+}
+
+.text-news p {
+    color: #575757;
+    font-size: 16px;
+    margin-top: 10px;
+    font-family: 'Istok Web', sans-serif ;
+    line-height: 25px;
+}
+
+.date1,
+.date2,
+.date3 {
+    position: relative;
+}
+
+.date1::after {
+    content: "07/01/2020";
+    background-color:  #2c7ae7;
+    padding: 10px;
+    color: #fff;
+    position: absolute;
+    top: 270px;
+    left: 130px;
+    border-radius: 5px;
+    font-family: 'Istok Web', sans-serif ;
+    font-size: 13px;
+}
+
+.date2::after {
+    content: "05/01/2020";
+    background-color:  #2c7ae7;
+    padding: 10px;
+    color: #fff;
+    position: absolute;
+    top: 270px;
+    left: 130px;
+    border-radius: 5px;
+    font-family: 'Istok Web', sans-serif ;
+    font-size: 13px;
+}
+
+.date3::after {
+    content: "01/01/2020";
+    background-color:  #2c7ae7;
+    padding: 10px;
+    color: #fff;
+    position: absolute;
+    top: 270px;
+    left: 130px;
+    border-radius: 5px;
+    font-family: 'Istok Web', sans-serif ;
+    font-size: 13px;
+}
+
+.latest-news:hover {
+    box-shadow:   0 0 10px rgb(190, 188, 188);
+}

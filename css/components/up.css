@@ -1,0 +1,44 @@
+#btn-up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #ffffff;
+    width: 43px;
+    height: 43px;
+    text-align: center;
+    border: solid #bdbaba  2px;
+    border-radius: 10px;
+    margin: 0px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: background-color .3s;
+    z-index: 1000;
+    transition: background-color .3s,
+    opacity .5s, visibility .5s;
+}
+
+#btn-up i {
+    color: rgb(30, 121, 224);
+    font-size: 18px;
+}
+
+#btn-up:hover {   
+    cursor: pointer;   
+    border: solid #797979  3px;
+}
+
+#btn-up:active {   
+    background-color: #8b8989; 
+} 
+
+.dont-show {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.show {
+    opacity: 1;
+    visibility: inherit;
+}

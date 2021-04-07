@@ -1,0 +1,79 @@
+.conteiner {
+    padding-left: 11%;
+    padding-right: 11%;
+}
+
+.heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 52px;
+    color: rgb(37, 37, 37);
+}
+
+.indent {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.heading-block {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 52px;
+    color: rgb(37, 37, 37);
+}
+
+.link-animation {
+    position: relative;
+    display: block;
+}
+
+.link-animation a{
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.link-animation a:after {
+	top: -100%;
+	left: 0;
+	width: 100%;
+	position: absolute;
+	background: #3a9999;
+	border-radius: 5px;
+	content: 'Flipped';
+	transform-origin: left bottom;
+	transform: rotateX(90deg);
+}
+
+.link-animation a:hover {
+	transform-origin: center bottom;
+	transform: rotateX(-90deg) translateY(100%);
+}
+  
+.d3-btn {
+    position: relative;
+    transition:0.4s;
+    transform-origin: 50% 0 0;
+    transform-style: preserve-3d;
+    display: block;
+}
+  
+.d3-btn:hover {
+    transform: rotateX(90deg);
+}
+
+.d3-btn::after {
+    content:attr(data-title);
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0px 0px;
+    background-color: transparent;
+    transform-origin: 50% 0;
+    transform: translate3d(0, 100%, 0) rotateX(-90deg);
+}
+
+.d3-btn:hover::after {
+    transform: none;
+}

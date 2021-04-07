@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.8/jquery.viewportchecker.min.js"></script>
+</head>
+<body>
+    <a id="btn-up"><i class="fas fa-long-arrow-alt-up"></i></a>
+
+    <header class="header conteiner">
+        <div class="header-top">
+            <div class="info">
+                <a href="mailto:mail@example.com" class="img-email"> mail@example.com</a>
+                <span class="bold">24/7 Support: </span><a href="tel: +1888777234">1-888-777-1234</a>
+            </div>
+            <div class="feedback">
+                <div>
+                    <a href="https://facebook.com"> <i class="fab fa-facebook-f"></i> </a>
+                    <a href="https://instagram.com"> <i class="fab fa-instagram"></i> </a>
+                    <a href="https://linkedin.com"> <i class="fab fa-linkedin-in"></i> </a>
+                    <a href="https://twitter.com"> <i class="fab fa-twitter"></i> </a>
+                </div>
+                <div class="call">
+                    <button href="#" class="bold open-btn"> <img src="images/wigets/phone-ringing (1).png" alt="phone">Callback</button>
+                            <div class="modal-window test tesg1">
+                                <div class="modal-content">
+    
+                                    <form action="">
+                                        <h3 class="heading-modal-window">We will call you</h3>
+                                        <input type="text" placeholder="Your name">
+                                        <input type="text" placeholder="Your phone">
+                                        <button class="btn-service btn-call">Waiting for a Call</button>
+                                    </form>
+                        
+                        
+                                    <!-- <button class="close-btn" onclick="toggleModal()">X</button> -->
+                                    <button class="close-btn"><i class="fas fa-times"></i></button>
+                                </div>
+                            </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-main conteiner active">
+            <div class="logo">
+                <a href="#"><img src="images/wigets/logo-ico.png" alt="logo" class="logo"></a>
+                <a href="#">PathSoft</a>
+            </div>
+            <div class="menu">
+                <div class="dropdown">
+                    <a href="#" class="dropdown-link d3-btn" id="menu-margin" data-title="Home">Home <i class="fas fa-chevron-down"></i>
+                        <div class="dropdown-content">
+                            <a href="#" class="d3-btn">Home 1</a>
+                            <a href="#" class="hover-link">Home 2</a>
+                            <a href="#" class="link-animation">Home 3</a>
+                            <a href="#">Home 4</a>
+                        </div>
+                </div>
+                <a href="#" id="menu-margin">About us</a>
+                <div class="dropdown">
+                    <a href="#" class="dropdown-link" id="menu-margin">Service <i class="fas fa-chevron-down"></i>
+                        <div class="dropdown-content">
+                            <a href="#">Service</a>
+                            <a href="#">Service 2</a>
+                            <a href="#">Service 3</a>
+                            <a href="#">Single service</a>
+                        </div>
+                </div>
+                <a href="#" id="menu-margin">Pages</a>
+                <div class="dropdown">
+                    <a href="#" class="dropdown-link" id="menu-margin">Blog <i class="fas fa-chevron-down"></i>
+                        <div class="dropdown-content">
+                            <a href="#">List Blog</a>
+                            <a href="#">Grid Blog</a>
+                            <a href="#">Grid Blog 2</a>
+                            <a href="#">Grid Blog 3</a>
+                            <a href="#">Blog Post</a>
+                            <a href="#">Timeline</a>
+                        </div>
+                </div>
+                <div class="dropdown">
+                <a href="#" class="dropdown-link" id="menu-margin">Gallery <i class="fas fa-chevron-down"></i>
+                    <div class="dropdown-content">
+                        <a href="#">Grid Padding Galery</a>
+                        <a href="#">Grid No Padding Gallery</a>
+                        <a href="#">Grid Masonry</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                <a href="#" class="dropdown-link" id="menu-margin">Contact Us <i class="fas fa-chevron-down"></i>
+                    <div class="dropdown-content">
+                        <a href="#">Contact Us</a>
+                        <a href="#">Contact Us 2</a>
+                    </div>
+                </div>
+                <a href="#">En</a>
+                <a href="#" id="search" id="menu-margin"><i class="fas fa-search"></i></a>
+            </div>
+        </div>
+
+        <div>
+            <div class="header-main-adaptive">
+
+                <!-- <button class="container-adaptive" onclick="myFunction('x')">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </button>
+             -->
+                <button class="open-adaptive-window-btn">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                  </button>
+                  <button class="close-adaptive-window-btn">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </button> 
+                <div class="adaptive-logo">
+                    <div class="logo">
+                        <a href="#"><img src="images/wigets/logo-ico.png" alt="logo" class="logo"></a>
+                        <a href="#" id="adaptive-text-logo">PathSoft</a>
+                    </div>
+                </div>
+                <div class="adaptive-serch-header-main">
+                    <div class="search-header-main">
+                        <a href="#" id="search" id="menu-margin"><i class="fas fa-search"></i></a>
+                    </div>
+                    <div class="info-header-main-adaptive">
+                        <div class="info-adaptive"></div>
+                        <div class="info-adaptive"></div>
+                        <div class="info-adaptive"></div>
+                    </div>
+                </div>
+    
+            </div>
+
+        </div>
+
+        <section class="header-adaptive-nav">
+            <div class="header-adaptive-nav-content">
+                <div class="nav-header-adaptive">
+                    <a href="#" class="adaptive-nav">Home</a>
+                    <a href="#" class="adaptive-nav">About Us</a>
+                    <a href="#" class="adaptive-nav">Service</a>
+                    <a href="#" class="adaptive-nav">Pages</a>
+                    <a href="#" class="adaptive-nav">Gallery</a>
+                    <a href="#" class="adaptive-nav">Blog</a>
+                    <a href="#" class="adaptive-nav">Contact Us</a>
+                </div>
+                <div class="lang-adaptive-nav">
+                    <a href="#">En</a>
+                    <a href="#">Sp</a>
+                    <a href="#">It</a>
+                    <a href="#">Uk</a>
+                    <a href="#">Ru</a>
+                </div>
+            </div>
+        </section>
+
+    </header>
+<section class="solution  jumbotron">
+            <div class="shift">
+                <h2 class="heading">IT Solutions for Your Business</h2>
+                <p>
+                    On this template you will be able to create a site for your business. The template has many different blocks from which you can create your own unique site.
+                </p>
+            <div class="wrap btn-row">
+                <a href="#" class="btn gradient">Learn More<i class="fas fa-arrow-right"></i></a>
+                <a href="#" class="btn bordered"><span class="z-index">Get in Touch<i class="fas fa-arrow-right"></i></span></a>
+            </div>
+            </div>
+</section>
+<section class="conteiner indent">
+    <div class="service">
+        <h3>AREAS WHAT WE SERV</h3>
+    </div>
+    <div class="service">
+        <h2 class="heading">Our Services</h2>
+    </div>
+    <div class="wrap">
+        <a href="#" class="corporate block">
+            <div class="feature-icon">
+                <i class="fas fa-cog"></i>
+            </div>
+            <div class="btn-margin">
+                <h3 class="heading-block">Corporate Solution</h3>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+            <div class="bc-corporate">
+                <i class="fas fa-cog"></i>
+            </div>
+        </a>
+        <a href="#" class="call-center block">
+            <div class="feature-icon">
+                <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="btn-margin">
+                <h3 class="heading-block">Call Center Solution</h3>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it..</p>
+            </div>
+            <div class="bc-call-center">
+                <i class="fas fa-phone-alt"></i>
+            </div>
+        </a>
+        <a href="#" class="cloud block">
+            <div class="feature-icon">
+                <i class="fas fa-cloud-download-alt"></i>
+            </div>
+            <div class="btn-margin">
+                <h3 class="heading-block">Cloud Development</h3>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words.</p>
+            </div>
+            <div class="bc-cloud">
+                <i class="fas fa-cloud-download-alt"></i>
+            </div>
+        </a>
+    </div>
+    <div>
+        <a href="#" id="color-btn" class="btn-service">See All Service <i class="fas fa-arrow-right"></i></a>
+    </div>
+</section>
+<section>
+    <div class="conteiner choose">
+        <div class="service">
+            <h3>SOME REASONS</h3>
+        </div>
+        <div class="service">
+            <h2 class="heading">Why Choose Us</h2>
+        </div>
+        <div class="wrap">
+            <div class="block-choose">
+                <div class="number-block-choose">
+                    <h2>01</h2>
+                </div>
+                <div class="text-block-choose">
+                    <h2>High Quality Hardware</h2>
+                    <p>We use top-notch hardware to develop the most efficient apps for our customers</p>
+                </div>
+            </div>
+            <div class="block-choose">
+                <div class="number-block-choose">
+                    <h2>02</h2>
+                </div>
+                <div class="text-block-choose">
+                    <h2>Dedicated 24\7 Support</h2>
+                    <p>You can rely on our 24/7 tech support that will gladly solve any app issue you may have.</p>
+                </div>
+            </div>
+            <div class="block-choose">
+                <div class="number-block-choose">
+                    <h2>03</h2>
+                </div>
+                <div class="text-block-choose">
+                    <h2>30-Day Money-back Guarantee</h2>
+                    <p>If you are not satisfied with our apps, we will return your money in the first 30 days.</p>
+                </div>
+            </div>
+            <div class="block-choose">
+                <div class="number-block-choose">
+                    <h2>04</h2>
+                </div>
+                <div class="text-block-choose">
+                    <h2>Agile and Fast Working Style</h2>
+                    <p>This type of approach to our work helps our specialists to quickly develop better apps.</p>
+                </div>
+            </div>
+            <div class="block-choose">
+                <div class="number-block-choose">
+                    <h2>05</h2>
+                </div>
+                <div class="text-block-choose">
+                    <h2>Some Apps are Free</h2>
+                    <p>We also develop free apps that can be downloaded online without any payments.</p>
+                </div>
+            </div>
+            <div class="block-choose">
+                <div class="number-block-choose">
+                    <h2>06</h2>
+                </div>
+                <div class="text-block-choose">
+                    <h2>High Level of Usability.</h2>
+                    <p>All our products have high usability allowing users to easily operate the apps.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="conteiner indent ">
+    <div class="wrap-counter">
+        <div class="round-counter">
+            <div class="round-counter-with-text">
+                <div class="text-counter-round">
+                    <h3 id="outputText1">0</h3>
+                    <p>Years <br> Of Experience</p>
+                </div>
+            </div>
+            <div class="bg-round">
+            </div>
+        </div>
+        <div class="counter-item-text">
+            <div>
+                <h3 id="outputText2">0К</h3>
+                <p>Аpps Developed</p>
+            </div>
+            <div id="item-text-margin">
+                <h3 id="outputText3">0</h3>
+                <p>Consultans</p>
+            </div>
+            <div>
+                <h3 id="outputText4">0</h3>
+                <p>Employers</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="conteiner indent latest-projects">
+    <div>
+        <div class="service">
+            <h3>OUR WORKS</h3>
+        </div>
+        <div class="service">
+            <h2 class="heading">Latest Projects</h2>
+        </div>
+        <div class="project-menu">
+            <a href="#">ALL</a>
+            <a href="#">MOBILE APPS</a>
+            <a href="#">CUSTOM SOFTWARE</a>
+            <a href="#">QA & TESTING</a>
+            <a href="#">UX AND DESIGN</a>
+        </div>
+        <div class="wrap">
+            <div class="latest-projects-block">
+                <div class="latest-projects-block-front">
+                    <img class="latest-projects-block-border" src="images/wigets/project-img-1.jpg" alt="project-img-1" width="auto">
+                </div>
+                <div class="latest-projects-block-back">
+                    <div>
+                        <h3>MPlanner</h3>
+                    </div>
+                    <div>
+                        <p>We work hard on every app to deliver top-notch features with great UI that you won’t find anywhere else.</p>
+                    </div>
+                    <div>
+                        <a href="#"><i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="latest-projects-block">
+                <div class="latest-projects-block-front">
+                    <img class="latest-projects-block-border" src="images/wigets/project-img-2.jpg" alt="project-img-2">
+                </div>
+                <div class="latest-projects-block-back">
+                    <div>
+                        <h3>WeatherNow</h3>
+                    </div>
+                    <div>
+                        <p>We work hard on every app to deliver top-notch features with great UI that you won’t find anywhere else.</p>
+                    </div>
+                    <div>
+                        <a href="#"><i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="latest-projects-block">
+                <div class="latest-projects-block-front">
+                    <img class="latest-projects-block-border" src="images/wigets/project-img-3.jpg" alt="project-img-3">
+                </div>
+                <div class="latest-projects-block-back">
+                    <div>
+                        <h3>Langer Messenger</h3>
+                    </div>
+                    <div>
+                        <p>We work hard on every app to deliver top-notch features with great UI that you won’t find anywhere else.</p>
+                    </div>
+                    <div>
+                        <a href="#"><i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="latest-projects-block">
+                <div class="latest-projects-block-front">
+                    <img class="latest-projects-block-border" src="images/wigets/project-img-4.jpg" alt="project-img-4">
+                </div>
+                <div class="latest-projects-block-back">
+                    <div>
+                        <h3>Mobile Finance</h3>
+                    </div>
+                    <div>
+                        <p>We work hard on every app to deliver top-notch features with great UI that you won’t find anywhere else.</p>
+                    </div>
+                    <div>
+                        <a href="#"><i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="latest-projects-block">
+                <div class="latest-projects-block-front">
+                    <img class="latest-projects-block-border" src="images/wigets/project-img-5.jpg" alt="project-img-5">
+                </div>
+                <div class="latest-projects-block-back">
+                    <div>
+                        <h3>RaptCash</h3>
+                    </div>
+                    <div>
+                        <p>We work hard on every app to deliver top-notch features with great UI that you won’t find anywhere else.</p>
+                    </div>
+                    <div>
+                        <a href="#"><i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="latest-projects-block">
+                <div class="latest-projects-block-front">
+                    <img class="latest-projects-block-border" src="images/wigets/project-img-6.jpg" alt="project-img-6">
+                </div>
+                <div class="latest-projects-block-back">
+                    <div>
+                        <h3>Search by photo</h3>
+                    </div>
+                    <div>
+                        <p>We work hard on every app to deliver top-notch features with great UI that you won’t find anywhere else.</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div>
+            <a href="#" id="color-btn" class="btn-service">See All Projects <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+</section>
+<section class="conteiner indent">
+    <div class="team">
+        <div class="service">
+            <h3>WHO WE ARE</h3>
+        </div>
+        <div class="service">
+            <h2 class="heading">Meet The Team</h2>
+        </div>
+        <div class="wrap">
+            <div class="person">
+                <div class="person-img">
+                    <img src="images/wigets/team-img-1.jpg" alt="team-img-1">
+                </div>
+                <div class="person-info">
+                    <h3>Mary Lee</h3>
+                    <p>Software Developer</p>
+                </div>
+                <div class="person-contact">
+                    <a href="https://facebook.com"> <i class="fab fa-facebook-f"></i> </a>
+                    <a href="https://instagram.com"> <i class="fab fa-instagram"></i> </a>
+                    <a href="https://linkedin.com"> <i class="fab fa-linkedin-in"></i> </a>
+                    <a href="https://twitter.com"> <i class="fab fa-twitter"></i> </a>
+                </div>
+            </div>
+            <div class="person">
+                <div class="person-img">
+                    <img src="images/wigets/team-img-2.jpg" alt="team-img-2">
+                </div>
+                <div class="person-info">
+                    <h3>Ryan Wilson</h3>
+                    <p>CEO</p>
+                </div>
+                <div class="person-contact">
+                    <a href="https://facebook.com"> <i class="fab fa-facebook-f"></i> </a>
+                    <a href="https://instagram.com"> <i class="fab fa-instagram"></i> </a>
+                    <a href="https://linkedin.com"> <i class="fab fa-linkedin-in"></i> </a>
+                    <a href="https://twitter.com"> <i class="fab fa-twitter"></i> </a>
+                </div>
+            </div>
+            <div class="person">
+                <div>
+                    <img src="images/wigets/team-img-3.jpg" alt="team-img-3" class="person-img">
+                </div>
+                <div class="person-info">
+                    <h3>Sam Robinson</h3>
+                    <p>Senior Developer</p>
+                </div>
+                <div class="person-contact">
+                    <a href="https://facebook.com"> <i class="fab fa-facebook-f"></i> </a>
+                    <a href="https://instagram.com"> <i class="fab fa-instagram"></i> </a>
+                    <a href="https://linkedin.com"> <i class="fab fa-linkedin-in"></i> </a>
+                    <a href="https://twitter.com"> <i class="fab fa-twitter"></i> </a>
+                </div>
+            </div>
+            <div class="person">
+                <div class="person-img">
+                    <img src="images/wigets/team-img-4.jpg" alt="team-img-4">
+                </div>
+                <div class="person-info">
+                    <h3>Jill Peterson</h3>
+                    <p>Senior Developer</p>
+                </div>
+                <div class="person-contact">
+                    <a href="https://facebook.com"> <i class="fab fa-facebook-f"></i> </a>
+                    <a href="https://instagram.com"> <i class="fab fa-instagram"></i> </a>
+                    <a href="https://linkedin.com"> <i class="fab fa-linkedin-in"></i> </a>
+                    <a href="https://twitter.com"> <i class="fab fa-twitter"></i> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="conteiner indent">
+    <div class="service">
+        <h3>REVIEWS FROM OUR CLIENTS</h3>
+    </div>
+    <div class="service">
+        <h2 class="heading">What People Say</h2>
+    </div>
+    <div class="wrap">
+        <div class="reviews">
+            <div class="user">
+                <div class="img-user">
+                    <img src="images/wigets/auth-img-1.jpg" alt="auth-img-1">
+                </div>
+                <div class="name-user">
+                    <h3>Catherine Williams</h3>
+                    <p>Regular client</p>
+                </div>
+            </div>
+            <div class="review" id="review-padding1">
+                <p>PathSoft offers a high caliber of resources skilled in Microsoft Azure.NET, mobile and Quality Assurance. They became our true business partners over the past three years.</p>
+            </div>
+        </div>
+        <div class="reviews">
+            <div class="user">
+                <div class="img-user">
+                    <img src="images/wigets/auth-img-2.jpg" alt="auth-img-2">
+                </div>
+                <div class="name-user">
+                    <h3>Rupert Wood</h3>
+                    <p>Regular client</p>
+                </div>
+            </div>
+            <div class="review">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit consequuntur sequi eos beatae deleniti culpa cupiditate rerum. Similique, blanditiis rem perspiciatis fugiat voluptatem quas officiis ducimus reprehenderit.</p>
+            </div>
+        </div>
+        <div class="reviews">
+            <div class="user">
+                <div class="img-user">
+                    <img src="images/wigets/auth-img-3.jpg" alt="auth-img-3">
+                </div>
+                <div class="name-user">
+                    <h3>Samantha Brown</h3>
+                    <p>Regular client</p>
+                </div>
+            </div>
+            <div class="review">
+                <p>We sincerely hope that each and every user entering our website will find exactly. With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page.</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <a href="#" id="color-btn" class="btn-service">See All Reviews <i class="fas fa-arrow-right"></i></a>
+    </div>
+</section>
+<section class="conteiner indent news">
+    <div class="service">
+        <h3>MORE INFO ABOUT</h3>
+    </div>
+    <div class="service">
+        <h2 class="heading">Latest News</h2>
+    </div>
+    <div class="wrap">
+        <div class="latest-news date1">
+            <div class="img-news">
+                <a href="#"><img src="images/wigets/news-img-1.jpg" alt="news-img-1"></a>
+            </div>
+            <div class="text-news">
+                <a href="#"><h3>Benefits Of Async/Await</h3></a>
+                <p>Asynchronous functions are a good and bad thing in JavaScript</p>
+            </div>
+        </div>
+        <div class="latest-news date2">
+            <div class="img-news">
+                <a href="#"><img src="images/wigets/news-img-2.jpg" alt="news-img-2"></a>
+            </div>
+            <div class="text-news">
+                <a href="#"><h3>Key Considerations Of IPaaS</h3></a>
+                <p>Digital transformation requires cloud appropriate adoption</p>
+            </div>
+        </div>
+        <div class="latest-news date3">
+            <div class="img-news">
+                <a href="#"><img src="images/wigets/news-img-3.jpg" alt="news-img-3"></a>
+            </div>
+            <div class="text-news">
+                <a href="#"><h3>Hibernate Query Language</h3></a>
+                <p>In this tutorial, we will discuss the Hibernate Query Language.</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <a href="#" id="color-btn" class="btn-service">See All News <i class="fas fa-arrow-right"></i></a>
+    </div>
+</section>
+<footer class="footer">
+    <div class="conteiner footer-content wrap">
+        <div class="footer-pathsoft">
+            <div class="footer-logo">
+                <a href="#"><img src="images/wigets/logo-ico.png" alt="logo" class="footer-logo-img"></a>
+                <a href="#" class="footer-heading">PathSoft</a>
+            </div>
+            <div class="footer-paragraphs">
+                <p>Our company has been developing high-quality and reliable software for corporate needs since 2008. We are renowned professionals of software development.</p>
+            </div>
+            <div class="footer-social-networks">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-menu">
+            <div>
+                <h3 class="footer-heading">Menu</h3>
+            </div>
+            <div class="link link-animation">
+                <div>
+                    <a href="#" btn-3d-text="Hover me" class="btn-3d">About Us</a>
+                </div>
+                <div>
+                    <a href="#" data-title="Services" class="d3-btn">Services</a>
+                </div>
+                <div>
+                    <a href="#">Pricing</a>
+                </div>
+                <div>
+                    <a href="#">Blog</a>
+                </div>
+                <div>
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-offer">
+            <div>
+                <h3 class="footer-heading">What We Offer</h3>
+            </div>
+            <div class="link">
+                <div>
+                    <a href="#" btn-3d-text="Hover me" class="btn-3d"> DB Management</a>
+                </div>
+                <div>
+                    <a href="#">IOS/MacOS</a>
+                </div>
+                <div>
+                    <a href="#">Android Apps</a>
+                </div>
+                <div>
+                    <a href="#">Windows Apps</a>
+                </div>
+                <div>
+                    <a href="#">UX & UI</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-contact">
+            <div>
+                <h3 class="footer-heading">Our contacts</h3>
+            </div>
+            <div class="link">
+                <div class="addres">
+                    <p><i class="fas fa-map-marker-alt"></i> 301 S Irving Blvd Los Angeles, CA 90020</p>
+                </div>
+                <div class="phone-number">
+                    <span><i class="fas fa-mobile-alt"></i></span><a href="#">+1 323-913-4688</a>
+                    <span>,</span><a href="#">+1 323-888-4554</a>
+                </div>
+                <div class="mail">
+                    <i class="fas fa-envelope"></i><a href="#">mail@example.com</a>
+                </div>
+            </div>
+            <div class="subscription">
+                <div>
+                    <h3 class="footer-heading">Subscribe</h3>
+                </div>
+                <div class="block-subscribe">
+                    <input type="text" placeholder="Your email">
+                    <a href="#" class="btn-service btn-footer">Subscribe</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-end conteiner">
+        <div class="footer-end-links">
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+        <div class="copyright">
+            <p>© 2020 PathSoft. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+<script src="js/modal-window.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/slideshow.js"></script>
+<script src="js/modal-window-nav.js"></script>
+<script src="js/up.js"></script>
+<script src="js/TypeWriter.js"></script>
+</body>
+</html>
